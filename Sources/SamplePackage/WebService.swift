@@ -19,6 +19,7 @@ public class WebService {
     
     public func fetch<T: Codable>(url: URL, parse: @escaping (Data) -> T?, completion: @escaping (Result<T?, NetworkError>) -> Void)  {
         
+        //fourth commit
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data, error == nil,
                   (response as? HTTPURLResponse)?.statusCode == 200
@@ -35,3 +36,5 @@ public class WebService {
   //ggjhgjhvjhjvjk
 }
 //tyfuyfyugioohihohohi
+
+
